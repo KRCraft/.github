@@ -4,70 +4,57 @@
 
 # KRCraft
 
-**Aqlli qurilish boshqaruvi — loyihalar, byudjetlar, materiallar, xarajatlar va taraqqiyot.**
+Smart management for construction teams — projects, budgets, materials, expenses and progress in one place.
 
-*Multi-tenant construction operations platform for projects, teams, and site delivery.*
+Aqlli qurilish boshqaruvi — loyihalar, byudjetlar, materiallar, xarajatlar va taraqqiyot.
 
-[![BuildTrack](https://img.shields.io/badge/Main-BuildTrack-2563eb?style=for-the-badge)](https://github.com/KRCraft/BuildTrack)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/KRCraft/BuildTrack)
-[![Django](https://img.shields.io/badge/Django_5-092E20?style=flat-square&logo=django)](https://github.com/KRCraft/BuildTrack)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/KRCraft/BuildTrack)
-[![Next.js](https://img.shields.io/badge/Next.js_15-black?style=flat-square&logo=next.js)](https://github.com/KRCraft/BuildTrack)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/KRCraft/BuildTrack)
-[![Docker](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/KRCraft/BuildTrack)
+[![KRCraft](https://img.shields.io/badge/GitHub-KRCraft-181717?style=for-the-badge&logo=github)](https://github.com/KRCraft)
+[![BuildTrack](https://img.shields.io/badge/Our_Product-BuildTrack-2563eb?style=for-the-badge)](https://github.com/KRCraft/BuildTrack)
 
 </div>
 
-## Vision
+## Who we are
 
-Small construction firms still run on spreadsheets, WhatsApp, and paper quotes. **[BuildTrack](https://github.com/KRCraft/BuildTrack)** gives them a single dashboard to:
+KRCraft is a product organization focused on construction operations. We help small and mid-size construction firms replace spreadsheets, chats and paper quotes with one clear operational dashboard.
 
-- Create and send professional **quotes** in minutes
-- Track **projects** from inquiry → in-progress → completed
-- Manage **clients** and contact history
-- Plan **payments / milestones**
-- Give clients a transparent view of progress
+We design simple tools for owners, site managers and teams — from first client inquiry to completed project.
 
-First usable slice: auth, company workspaces, roles, project management, dashboard, immutable audit.
+## Mission
 
-## What’s inside BuildTrack
+Give every construction team clarity on money, materials and progress, and give their clients transparency and trust.
 
-**Backend `backend/` — Django REST API :8000:**
-`accounts` (JWT HttpOnly refresh) • `companies` (multi-tenant) • `projects` (DRAFT→ACTIVE→COMPLETED) • `budgets` • `expenses` • `inventory` • `workforce` • `reports` • `audit` • `dashboard`
+## What we focus on
 
-**Frontend `frontend/` — Next.js 15 :3000:**
-App Router (dashboard, projects, inventory, expenses) + Tailwind + `lib/api.ts` (Bearer + `X-Company-ID` + auto-refresh), legacy Vite SPA :5173 fallback.
+- Project delivery — from inquiry to completion
+- Client relationships and professional quotations
+- Budgets, expenses and payment planning
+- Materials and warehouse control
+- Workforce planning and daily reporting
+- Transparency for clients
 
-**Also:** `docs/ARCHITECTURE.md` • `docs/ROADMAP.md` • `postman/` collection • `scripts/setup` + `run_dev` • `docker-compose.yml`
+## Our product
 
-## Tech Stack
+BuildTrack is our flagship platform developed inside this organization. It brings together projects, clients, budgets, inventory, workforce and reports for company workspaces with roles, dashboards and audit history.
 
-| Layer | Tech from BuildTrack |
-| ----- | -------------------- |
-| Backend | Django 5 + DRF + SimpleJWT + PostgreSQL |
-| Frontend | Next.js App Router + TypeScript + Tailwind CSS |
-| DevOps | Docker Compose — Django:8000, Next.js:3000, PostgreSQL:5432, Redis:6379 |
-| API | Postman collection in `postman/` |
+Learn more on the product page: BuildTrack repository.
 
-## Quickstart
+## How we work
 
-```bash
-# Docker (recommended)
-docker compose up --build
-# backend:  http://localhost:8000/api/v1/
-# frontend: http://localhost:3000/
-# admin:    http://localhost:8000/admin/
-```
+- Product first — solve real site problems, not demo features
+- Clarity over complexity — every screen must be understandable on site
+- Quality and accountability — roles, approvals and history by design
+- Open collaboration — issues, discussions and improvements are welcome
 
-Windows: `scripts\setup.bat` then `scripts\run_dev.bat`
-macOS/Linux: `./scripts/setup.sh` then `./scripts/run_dev.sh`
+## Organization
 
-Env: `NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1`
+- KRCraft — https://github.com/KRCraft
+- BuildTrack — our main product repository
+- .github — organization profile and health files (you are here)
 
 <div align="center">
 
-[BuildTrack Repo →](https://github.com/KRCraft/BuildTrack) • [Architecture →](https://github.com/KRCraft/BuildTrack/blob/main/docs/ARCHITECTURE.md) • [Roadmap →](https://github.com/KRCraft/BuildTrack/blob/main/docs/ROADMAP.md)
+[Organization →](https://github.com/KRCraft) • [BuildTrack →](https://github.com/KRCraft/BuildTrack) • [Issues →](https://github.com/KRCraft/BuildTrack/issues)
 
-© 2026 KRCraft • MIT (TBD)
+© 2026 KRCraft
 
 </div>
